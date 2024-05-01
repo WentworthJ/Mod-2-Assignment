@@ -16,22 +16,21 @@ const table = document.getElementById("gamelist-items");
 
 // Loop through all of the items in the JSON and extract the data and put it into a table 
 
-for (i in games.items){
+
+for (i in games.items) {
     const row = document.createElement("tr");
 
-    const cell1 = document.createElement("td");
+    const cell1 = document.createElement("td")
     cell1.textContent = games.items[i].name
     row.appendChild(cell1);
 
-    const cell2 = document.createElement("td");
-    cell2.textContent = games.items[i].price
+    const cell2 = document.createElement("td")
+    cell1.textContent = games.items[i].price
     row.appendChild(cell2);
 
     table.appendChild(row);
 
 
+
+
 }
-
-
-
-
